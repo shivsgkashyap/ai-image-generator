@@ -16,11 +16,7 @@ const PromptInput = () => {
     revalidateOnFocus: false,
   });
 
-  //  if (error) return <div>failed to load</div>;
-  //  if (isLoading) return <div>loading...</div>;
-
-  //  // render data
-  //  return <div>hello {data.name}!</div>;
+  const loading = isLoading || isValidating;
 
   return (
     <div className="m-10">
@@ -28,7 +24,11 @@ const PromptInput = () => {
         <textarea
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder="Enter your creative idea..."
+          placeholder={
+            (loading && "Thinking of a suggestion 🤔...") ||
+            suggestion ||
+            "Enter your creative idea..."
+          }
           className="flex-1 p-4 outline-none rounded-md"
         />
         <button
@@ -51,10 +51,20 @@ const PromptInput = () => {
         <button
           type="button"
           className="p-4 bg-white text-violet-500 border-none transition-colors duration-200 rounded-b-md md:rounded-r-md md:rounded-bl-none font-bold"
+          onClick={mutate}
         >
           New Suggestion
         </button>
       </form>
+
+      {input && (
+        <p className="italic pt-2 pl-2 font-light">
+          Suggestion:{" "}
+          <span className="text-violet-500">
+            {loading ? "Thinking of something cool 🧐..." : suggestion}
+          </span>
+        </p>
+      )}
     </div>
   );
 };
