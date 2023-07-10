@@ -15,7 +15,7 @@ const Images = () => {
     isLoading,
     mutate: refreshImages,
     isValidating,
-  } = useSWR("/api/getImages", fetchImages, {
+  } = useSWR("images", fetchImages, {
     revalidateOnFocus: false,
   });
 
