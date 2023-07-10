@@ -30,8 +30,27 @@ app.http("generateImage", {
 
     const arraybuffer = res.data;
 
-    sas;
+    sasToken = await generateSASToken();
 
-    return { body: sasToken };
+    const blobServiceClient = new BlobServiceClient(
+      `https://${accountName}.blob.core.windows.net?${sasToken}`
+    );
+
+    const containerClient = blobServiceClient.getContainerClient(containerName);
+
+    //Generate current timestamp
+    const timestamp = new Date().getTime();
+    const file_name = `${prompt}_${timestamp}.png`;
+
+    const blockBlobClient = containerClient.getBlockBlobClient(file_name);
+
+    try {
+      await blockBlobClient.uploadData(arraybuffer);
+      console.log("File uploaded successfully!");
+    } catch (error) {
+      console.error("Error uploading file: ", error.message);
+    }
+
+    return { body: "Sucessfully uploaded image!" };
   },
 });
