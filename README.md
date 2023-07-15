@@ -1,34 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ART-ificial AI Art Generator App!
 
-## Getting Started
+_NOTE_ - The deployed app is currently in read only mode as Azure Functions: Version 4 of the Node.js programming model is in preview, meaning you can only see the images I have generated from localhost environment. So, I have provided a video of the app below running on localhost to display full functionality.
 
-First, run the development server:
+https://github.com/shivsgkashyap/ai-image-generator/assets/89941894/eb6f1e5a-d95b-459b-8545-6389f44b0072
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## [READ-ONLY DEPLOYED APP](https://ai-image-generator-flame.vercel.app/) :point_left:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Summary
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+Taking advantage of OpenAI's incredible API, I have created and AI Art Generator with DALL·E 2.0 & ChatGPT! Fully responsive App with art suggestions from ChatGPT and inputs to generate your own custom art. All packaged in an aesthetically pleasing design. Built with Next.js 13, React.js, TypeScript, Tailwind, Chat GPT, DALL·E 2.0 & Microsoft Azure
 
-To learn more about Next.js, take a look at the following resources:
+## Key features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+👉 Powerful app built with React and the new features of Next.js 13  
+👉 TypeScript to reduce the overall number of Bugs and Errors  
+👉 Fully responsive site with Tailwind CSS  
+👉 Used the DALL·E 2.0 API to generate Art with input prompts  
+👉 Used the ChatGPT API to create suggestion prompt's for your AI Art  
+👉 Set up & Deployed Microsoft Azure Functions to the cloud  
+👉 How to upload/download images to & from Microsoft Azure Blob Storage securely!  
+👉 Created API endpoints in Next.js 13.3 app to securely manage requests  
+👉 Leveraged the power of Server components in Next.js 13  
+👉 Dynamic page routing in Next.js 13  
+👉 Deployed the final build on Vercel  
+  
++ So Much More!
