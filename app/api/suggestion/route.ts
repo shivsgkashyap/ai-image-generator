@@ -1,7 +1,8 @@
 export async function GET(request: Request) {
   // Connect to our MS Azure Function Endpoint
+
   const response = await fetch(
-    "http://127.0.0.1:7071/api/getChatGPTSuggestion",
+    "https://art-ificial-ai-image-gen-sk.azurewebsites.net/api/getchatgptsuggestion",
     {
       cache: "no-store",
     }
