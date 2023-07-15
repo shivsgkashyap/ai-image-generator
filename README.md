@@ -17,13 +17,13 @@ Taking advantage of OpenAI's incredible API, I have created and AI Art Generator
 👉 Powerful app built with React and the new features of Next.js 13  
 👉 TypeScript to reduce the overall number of Bugs and Errors  
 👉 Fully responsive site with Tailwind CSS  
-👉 Used the DALL·E 2.0 API to generate Art with input prompts  
-👉 Used the ChatGPT API to create suggestion prompt's for your AI Art  
+👉 Used the DALL·E 2.0 API to generate art with input prompts  
+👉 Used the ChatGPT API to create suggestion prompt's for AI Art  
 👉 Set up & Deployed Microsoft Azure Functions to the cloud  
-👉 How to upload/download images to & from Microsoft Azure Blob Storage securely!  
+👉 Upload/download images to & from Microsoft Azure Blob Storage securely  
 👉 Created API endpoints in Next.js 13.3 app to securely manage requests  
 👉 Leveraged the power of Server components in Next.js 13  
 👉 Dynamic page routing in Next.js 13  
 👉 Deployed the final build on Vercel  
   
-+ So Much More!
+& So Much More!
